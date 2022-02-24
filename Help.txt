@@ -1,0 +1,12 @@
+EF Relationships:
+https://docs.microsoft.com/en-us/ef/core/modeling/relationships
+
+
+
+EF migrations:
+dotnet tool install --global dotnet-ef
+
+dotnet ef migrations add InitDatabase --project ./Trail.Persistance -c MsSqlDbContext  -s ./Trail.Api
+
+
+dotnet ef database update --project ./Trail.Persistance -c MsSqlDbContext  -s ./Trail.Api
